@@ -1,0 +1,403 @@
+:root {
+    --primary-bg:white ;
+    --p-color: #a6a6a6;
+    --f-size:18px;
+    --f-weight:800;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+.container {
+    max-width: 600px;
+    background-color:var(--primary-bg) ;
+    position: relative;
+    top: 50% !important;
+    left: 50%;
+    transform: translate(-50%,0%);
+    font-family: sans-serif;
+    box-shadow: 1px 2px 2px 2px #aaaaaa;
+}
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px 20px 50px;
+
+}
+.topbar .logo a {
+    color: black;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: var(--f-weight);
+}
+.topbar .menu ul li {
+    display: inline-block;
+    padding: 8px;
+
+}
+.topbar .menu ul li a {
+    color:var(--p-color);
+    font-size:15px ;
+    font-weight: 500;
+}
+/*home*/
+.home {
+    background-image: url("./images/bg_1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 350px;
+    text-align: center ;
+    padding-top: 65px;
+    color: white;
+
+}
+/*.home .home-1 ::before {
+    
+    position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	content: '';
+	width: 100%;
+	background: #000000;
+    z-index: 1;
+    opacity: 0.1;
+}*/
+
+.home .home-1 h1 {
+    font-size: 30px;
+    font-weight: var(--f-weight);
+    padding-bottom: 25px;
+}
+.home .home-1 p {
+    line-height: 30px;
+    padding:20px 50px 20px 50px;
+}
+.home .home-1 img {
+    width: 60px;
+    height: 60px;
+}
+/*Services*/
+.services {
+    padding: 50px 30px 50px 30px;
+    text-align: center;   
+}
+.services .service-1 {
+    padding-bottom: 20px;
+}
+.services .service-1 h2{
+    font-weight: var(--f-weight);
+    font-size: var(--f-size);
+    padding-bottom: 10px;
+}
+.services .service-1 p {
+    font-size:17px;
+    color:var(--p-color);
+    
+}
+.services .service-2 {
+    display: flex;
+    background-color: #fafafa;
+    padding: 4px;
+}
+.services .service-2 .card2 {
+    background-color: #f0f0f0
+}
+.services .service-2 .card1 h3,.services .service-2 .card2 h3,.services .service-2 .card3 h3 {
+    font-size: var(--f-size);
+    font-weight: 590;
+    padding: 40px 20px 20px 20px;
+}
+.services .service-2 .card1 p,.services .service-2 .card2 p,.services .service-2 .card3 p {
+    color:var(--p-color);
+    line-height: 30px;
+    font-size: 17px;
+}
+/*Business*/
+.business {
+    width: 600px;
+    background-color: #fafafa;
+    padding: 20px ;
+    display: flex;
+    justify-content: space-between;
+}
+.business .business-1 img {
+    width:260px;
+    height: 240px;
+}
+.business .business-2 {
+    padding:20px;
+    text-align: justify;
+}
+.business .business-2 h1 {
+    font-size: var(--f-size);
+    font-weight: var(--f-weight);
+}
+.business .business-2 p {
+    color:var(--p-color);
+    line-height: 25px;
+    font-size: 17px;
+    word-break: break-all;
+    padding: 15px 0px 15px 0px ;
+}
+.business .business-2 a {
+    background-color:#0000b3;
+    color: white;
+    padding: 10px;
+    border-radius:8px;
+}
+/*Project*/
+.project{
+    padding-bottom: 40px;
+}
+.project .project-1 {
+    text-align: center;
+    padding:30px;
+}
+.project .project-1 h1 {
+    font-size: var(--f-size);
+    font-weight: var(--f-weight); 
+    text-transform: uppercase;  
+}
+.project .project-1 p {
+    color:var(--p-color);
+    line-height: 25px;
+    font-size: 17px;
+    word-break: break-all;
+    padding: 20px 50px 20px 50px;
+}
+.project .project-2 {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 20px;
+    padding:30px;
+
+}
+.project .project-2 a img {
+    width: 250px;
+    height: 230px;
+}
+.project .project-3 {
+    display:flex;
+    background-image: url("./images/bg_1.jpg");
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    text-align: center;
+
+}
+.project .project-3 .pro1 h1,.project .project-3 .pro2 h1,.project .project-3 .pro3 h1{
+    font-size: 35px;
+    font-weight: 700;
+    padding-bottom: 10px;
+
+}
+/*blog*/
+.blog {
+    padding: 0px 30px 40px 30px ;
+}
+.blog .blog-1 {
+    text-align: center;
+}
+.blog .blog-1 h1 {
+    font-size: var(--f-size);
+    font-weight: var(--f-weight);
+}
+.blog .blog-1 p {
+    color:var(--p-color);
+    line-height: 25px;
+    font-size: 17px;
+    word-break: break-all;
+    padding: 20px 50px 20px 50px;    
+}
+.blog .blog-2 {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    
+}
+.blog .blog-2 img {
+    height: 190px;
+    width: 245px;
+}
+.blog .blog-2 .bg1,.blog .blog-2 .bg2 {
+    padding: 10px 10px 50px 10px;
+    text-align: justify;
+}
+.blog .blog-2 .bg1 h1,.blog .blog-2 .bg2 h1 {
+    font-size: 17px;
+}
+.blog .blog-2 .bg1 .b1,.blog .blog-2 .bg2 .b1 {
+    color:var(--p-color);
+    line-height: 30px;
+    font-size: 17px;
+    word-break: break-all;  
+    padding: 20px 25px 30px 0px;
+}
+.blog .blog-2 .bg1 .b,.blog .blog-2 .bg2 .b {
+    color:var(--p-color);
+    line-height: 25px;
+    font-size: 15px;
+    word-break: break-all;    
+    padding: 20px 0px 20px 0px;
+}
+.blog .blog-2 .bg1 a,.blog .blog-2 .bg2 a {
+    background-color:#0000b3;
+    color: white;
+    padding: 10px;
+    border-radius:8px;   
+}
+/*team*/
+.team {
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+.team .team-1 {
+    text-align: center;
+}
+.team .team-1 h1 {
+    font-size: var(--f-size);
+    font-weight: var(--f-weight);
+}
+.team .team-1 p {
+    color:var(--p-color);
+    line-height: 25px;
+    font-size: 15px;
+    word-break: break-all;    
+    padding:20px 50px 20px 50px;
+}
+.team .team-2 {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 0px 30px 40px 30px ;
+}
+.team .team-2 img {
+        width: 150px;
+        height: 150px;
+        padding:10px 0px 10px 0px;
+}
+.team .team-2 .te1 h1, .team .team-2 .te2 h1, .team .team-2 .te3 h1 {
+    font-size: var(--f-size);
+    font-weight: var(--f-weight);
+    text-align: center;
+    padding-top: 8px;
+} 
+.team .team-2 .te1 .t, .team .team-2 .te2 .t, .team .team-2 .te3 .t {
+    color:  #cccccc;
+    text-align: center;
+    font-size: 17px;
+    padding: 8px 0px 8px 0px;
+}
+.team .team-2 .te1 .t1, .team .team-2 .te2 .t1, .team .team-2 .te3 .t1 {
+    color:var(--p-color);
+    line-height: 25px;
+    font-size: 16px;
+     text-align: justify;
+    word-break: break-all;
+    padding:3px 17px 0px 0px;
+}
+/*features*/
+.features {
+    padding: 40px 0px 35px 30px;
+    display: flex;
+}
+.features .feature-1 img {
+    width: 260px;
+    height: 380px;
+}
+.features .feature-2 h1 {
+    font-size: var(--f-size);
+    font-weight: var(--f-weight);
+    padding: 25px 15px 20px 24px;
+}
+.features .feature-2 .fe {
+    display:flex;
+}
+.features .feature-2 .fe .f {
+    padding: 10px 15px 30px 24px;
+}
+.features .feature-2 .fe .f  img{
+    width: 50px;
+    height: 50px;
+}
+.features .feature-2 .fe .f1 h3{
+    font-size: 16px;
+    padding-top: 15px;
+    
+}
+.features .feature-2 .fe .f1 p {
+    color:var(--p-color);
+    line-height: 25px;
+    font-size: 15px;
+    word-break: break-all;    
+    padding:0px 50px 15px 0px;
+}
+/*get*/
+.get {
+    background-color: #0000b3;
+    text-align: center;
+    padding-bottom: 70px;
+}
+.get h1 {
+    color: #fff;
+    font-size: var(--f-size);
+    font-weight: var(--f-weight);
+    padding: 40px 0px 20px 0px;
+}
+.get p {
+    color: #d9d9d9;
+    padding: 0px 50px 30px 40px;
+    line-height: 25px;
+}
+.get a {
+    color: #e6e6e6;
+    padding: 12px 16px;
+    border: 1px solid white;
+    border-radius: 7px;
+
+}
+.footer {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 25px;
+    background-color: black;
+    text-align: justify;
+    padding:40px ;
+}
+.footer .foot-1 h1, .footer .foot-2 h1, .footer .foot-3 h1 {
+    color: white;
+    font-size: var(--f-size);
+    font-weight: var(--f-weight);
+    padding-bottom: 30px;
+   
+}
+.footer .foot-1 p, .footer .foot-2 p, .footer .foot-3 p{
+    color: var(--p-color);
+    line-height: 25px;
+    word-break: break-all;
+    font-size: 16px;
+}
+.footer .foot-3 .foot1 a{
+    display:block ;
+    color: #e6e6e6;
+    padding: 0px 10px 17px 10px;
+}
+.footer2 {
+    color: var(--p-color);
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    padding: 40px 40px 80px 40px;
+}
+.footer2 a {
+    color: var(--p-color);
+}
